@@ -1,26 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using MyProject.Tools;
 
 namespace MyProject.Controllers
 {
-    [ApiController]
     [Route("[controller]")]
-    public class TestContrroler : ControllerBase
+    [ApiController]
+    public class CurrentsEur : ControllerBase
     {
-       
+        
         [HttpGet]
-        public string Get()
+        public string GetEuro()
         {
-         
-            ReadTable read = new ReadTable();
-           
-            return  read.GetCurrent(); 
+            return ReadTable.GetCurrent("Data/EuroTable", "http://api.nbp.pl/api/exchangerates/rates/c/eur/?format=json");
         }
+
+     
     }
 }

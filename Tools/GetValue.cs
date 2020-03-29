@@ -11,16 +11,19 @@ namespace MyProject.Tools
 {
     public class GetValue
     {
-        WebClient webClient = new WebClient();
-        public ValueOfCurrency myWalute = new ValueOfCurrency();
-        public List<ValueOfCurrency> myListOfWalutes = new List<ValueOfCurrency>();
+       static WebClient webClient = new WebClient();
+       static public ValueOfCurrency myWalute = new ValueOfCurrency();
+        static public List<ValueOfCurrency> myListOfWalutes = new List<ValueOfCurrency>();
+        static public List<ValueOfCurrency> helpListOfWalutes = new List<ValueOfCurrency>();
         CultureInfo kultura1 = new CultureInfo("Pl-pl");
         
-        public void GetApi()
+        public static void GetApi(string data,string NBP_Address)
         {
-            string jsonString = "";
+            myListOfWalutes.Clear();
+            helpListOfWalutes.Clear();
+         
 
-            string reply = webClient.DownloadString("http://api.nbp.pl/api/exchangerates/rates/c/usd/2016-04-04/?format=json");
+            string reply = webClient.DownloadString(NBP_Address);
 
             dynamic jObject = JObject.Parse(reply);
 
@@ -29,29 +32,30 @@ namespace MyProject.Tools
             myWalute.askPrice = jObject.rates[0].ask;
             myWalute.acctualPriceData = DateTime.Now.ToLocalTime().ToString("MM.dd HH:mm:ss");
 
-            myListOfWalutes.Insert(0,myWalute);
-            string path = @"Data/DolarsTable.json";
+            myListOfWalutes.Add(myWalute);
+            string path = @"" + data +".json";
             path = Path.GetFullPath(path);
             string fileData = File.ReadAllText(path);
 
             if (fileData != "")
             {
                 int counter = 0;
-               List<ValueOfCurrency> lastWalutes= JsonConvert.DeserializeObject<List<ValueOfCurrency>>(fileData);
-                foreach (ValueOfCurrency item in lastWalutes)
+                helpListOfWalutes= JsonConvert.DeserializeObject<List<ValueOfCurrency>>(fileData);
+                
+                foreach (ValueOfCurrency item in helpListOfWalutes)
                 {
+                   
                     myListOfWalutes.Add(item);
                     counter++;
-                    if(counter==9)
+                    if (counter == 9)
                     {
                         break;
                     }
-                }
 
-               
+                } 
             }
-         
-             jsonString = System.Text.Json.JsonSerializer.Serialize(myListOfWalutes);
+              
+            string jsonString = System.Text.Json.JsonSerializer.Serialize(myListOfWalutes);
             File.WriteAllText(path, jsonString);
         }
 
