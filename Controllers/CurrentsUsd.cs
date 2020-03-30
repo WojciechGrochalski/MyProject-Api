@@ -13,19 +13,20 @@ namespace MyProject.Controllers
     [Route("[controller]")]
     public class CurrentsUsd : ControllerBase
     {
-       
-        //[HttpGet("{eur}")]
-        
-        //public string GetEuro()
-        //{
-        //    return  ReadTable.GetCurrent("Data/EuroTable", "http://api.nbp.pl/api/exchangerates/rates/c/eur/?format=json"); 
-        //}
+        GetApiContiouns getApiContiouns = new GetApiContiouns("http://api.nbp.pl/api/exchangerates/rates/c/usd/today/?format=json");
 
         [HttpGet]
-        
+
         public string GetDolars()
         {
-            return ReadTable.GetCurrent("Data/DolarsTable", "http://api.nbp.pl/api/exchangerates/rates/c/usd/?format=json");
+            return ReadTable.GetCurrent("Data/DolarsTable", "http://api.nbp.pl/api/exchangerates/rates/c/usd/today/?format=json");
+        }
+
+        [HttpGet("now")]
+        public async Task<string> GetDolarsContinousAsync()
+        {
+           
+            return await getApiContiouns.AsyncGetApiContinous();
         }
     }
 }

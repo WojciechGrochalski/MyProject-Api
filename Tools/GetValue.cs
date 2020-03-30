@@ -6,33 +6,36 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Globalization;
 using MyProject.Currency;
+using MyProject.Repository;
 
 namespace MyProject.Tools
 {
-    public class GetValue
+    public class GetValue:ITools
     {
-       static WebClient webClient = new WebClient();
-       static public ValueOfCurrency myWalute = new ValueOfCurrency();
-        static public List<ValueOfCurrency> myListOfWalutes = new List<ValueOfCurrency>();
-        static public List<ValueOfCurrency> helpListOfWalutes = new List<ValueOfCurrency>();
-        CultureInfo kultura1 = new CultureInfo("Pl-pl");
+         readonly WebClient webClient = new WebClient();
+         readonly CultureInfo kultura1 = new CultureInfo("Pl-pl");
+
+         public ValueOfCurrency myWalute = new ValueOfCurrency();
+         public List<ValueOfCurrency> myListOfWalutes=new List<ValueOfCurrency>();
+         public List<ValueOfCurrency> helpListOfWalutes = new List<ValueOfCurrency>();
         
-        public static void GetApi(string data,string NBP_Address)
+        
+        public void GetApi(string data,string NBP_Address)
         {
             myListOfWalutes.Clear();
             helpListOfWalutes.Clear();
-         
-
             string reply = webClient.DownloadString(NBP_Address);
 
-            dynamic jObject = JObject.Parse(reply);
+            dynamic jObject  = JObject.Parse(reply);
+            string acctualPriceData = DateTime.Now.ToLocalTime().ToString("MM.dd HH:mm:ss");
+            string code = jObject.code;
+            string askPrice = jObject.rates[0].ask;
+            string bidPrice = jObject.rates[0].bid;
 
-            myWalute.type = jObject.code;
-            myWalute.bidPrice = jObject.rates[0].bid;
-            myWalute.askPrice = jObject.rates[0].ask;
-            myWalute.acctualPriceData = DateTime.Now.ToLocalTime().ToString("MM.dd HH:mm:ss");
-
+      
+            myWalute.Add(code, bidPrice, askPrice, acctualPriceData);
             myListOfWalutes.Add(myWalute);
+
             string path = @"" + data +".json";
             path = Path.GetFullPath(path);
             string fileData = File.ReadAllText(path);
@@ -44,7 +47,7 @@ namespace MyProject.Tools
                 
                 foreach (ValueOfCurrency item in helpListOfWalutes)
                 {
-                   
+                    
                     myListOfWalutes.Add(item);
                     counter++;
                     if (counter == 9)

@@ -16,7 +16,8 @@ namespace MyProject.Controllers
         [HttpGet]
         public string GetEuro()
         {
-            return ReadTable.GetCurrent("Data/EuroTable", "http://api.nbp.pl/api/exchangerates/rates/c/eur/?format=json");
+
+            return ReadTable.GetCurrent("Data/EuroTable", "http://api.nbp.pl/api/exchangerates/rates/c/eur/today/?format=json");
         }
 
      
