@@ -6,11 +6,11 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Globalization;
 using MyProject.Currency;
-using MyProject.Repository;
+using System.Threading.Tasks;
 
 namespace MyProject.Tools
 {
-    public class GetValue:ITools
+    public class GetApi
     {
          readonly WebClient webClient = new WebClient();
          readonly CultureInfo kultura1 = new CultureInfo("Pl-pl");
@@ -20,14 +20,18 @@ namespace MyProject.Tools
          public List<ValueOfCurrency> helpListOfWalutes = new List<ValueOfCurrency>();
         
         
-        public void GetApi(string data,string NBP_Address)
+        public async Task<string> GetApiAsync(string data,string NBP_Address)
         {
             myListOfWalutes.Clear();
             helpListOfWalutes.Clear();
             string reply = webClient.DownloadString(NBP_Address);
-
+            await Task.CompletedTask;
+            if (reply == "404 Not Found" || reply == "400 Bad Request")
+            {
+                return reply;
+            }
             dynamic jObject  = JObject.Parse(reply);
-            string acctualPriceData = DateTime.Now.ToLocalTime().ToString("MM.dd HH:mm:ss");
+            string acctualPriceData = DateTime.Now.ToString("MM.dd HH:mm:ss");
             string code = jObject.code;
             string askPrice = jObject.rates[0].ask;
             string bidPrice = jObject.rates[0].bid;
@@ -60,6 +64,8 @@ namespace MyProject.Tools
               
             string jsonString = System.Text.Json.JsonSerializer.Serialize(myListOfWalutes);
             File.WriteAllText(path, jsonString);
+            await Task.CompletedTask;
+            return jsonString;
         }
 
 

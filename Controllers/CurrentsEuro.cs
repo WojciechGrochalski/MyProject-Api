@@ -4,20 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+
 using MyProject.Tools;
 
 namespace MyProject.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class CurrentsEur : ControllerBase
+    public class CurrentsEuro : ControllerBase
     {
-        
-        [HttpGet]
-        public string GetEuro()
-        {
+        GetApi getApi = new GetApi();
 
-            return ReadTable.GetCurrent("Data/EuroTable", "http://api.nbp.pl/api/exchangerates/rates/c/eur/today/?format=json");
+        [HttpGet]
+        public async Task<string> GetEuro()
+        {
+            return  await getApi.GetApiAsync("Data/EuroTable", "http://api.nbp.pl/api/exchangerates/rates/c/eur/?today/?format=json");
         }
 
      

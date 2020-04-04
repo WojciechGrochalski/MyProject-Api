@@ -1,5 +1,5 @@
 ﻿using MyProject.Currency;
-using MyProject.Repository;
+
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Timers;
 
 namespace MyProject.Tools
 {
-    public class GetApiContiouns : GetValue, IContinounsConnections
+    public class GetApiContiouns : GetApi
     {
         readonly WebClient webClient = new WebClient();
         readonly CultureInfo kultura1 = new CultureInfo("Pl-pl");
@@ -27,12 +27,35 @@ namespace MyProject.Tools
             Data = data;
         }
 
-        public async Task<string> AsyncGetApiContinous()
+        public async Task<string> GetApiContinousAsync()
         {
             string reply = webClient.DownloadString(Data);
-
+            if(reply== "404 Not Found"||reply== "400 Bad Request")
+            {
+                return reply;
+            }
             dynamic jObject = JObject.Parse(reply);
-            string acctualPriceData = DateTime.Now.ToLocalTime().ToString("MM.dd HH:mm:ss");
+            string acctualPriceData = DateTime.Now.ToString("MM.dd HH:mm:ss");
+            string code = jObject.code;
+            string askPrice = jObject.rates[0].ask;
+            string bidPrice = jObject.rates[0].bid;
+
+            myWaluteAsync.Add(code, bidPrice, askPrice, acctualPriceData);
+            string jsonString = System.Text.Json.JsonSerializer.Serialize(myWaluteAsync);
+            await Task.CompletedTask;
+
+            return DolarInfoNow = jsonString;
+        }
+
+        public async Task<string> GetApiContinousAsync(string iso)
+        {
+            string reply = webClient.DownloadString(Data);
+            if (reply == "404 Not Found" || reply == "400 Bad Request")
+            {
+                return reply;
+            }
+            dynamic jObject = JObject.Parse(reply);
+            string acctualPriceData = DateTime.Now.ToString("MM.dd HH:mm:ss");
             string code = jObject.code;
             string askPrice = jObject.rates[0].ask;
             string bidPrice = jObject.rates[0].bid;
@@ -44,8 +67,5 @@ namespace MyProject.Tools
             return DolarInfoNow = jsonString;
         }
     }
-
-     
-
 
 }

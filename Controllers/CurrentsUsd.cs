@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Timers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyProject.Tools;
+
 
 namespace MyProject.Controllers
 {
@@ -13,20 +16,29 @@ namespace MyProject.Controllers
     [Route("[controller]")]
     public class CurrentsUsd : ControllerBase
     {
-        GetApiContiouns getApiContiouns = new GetApiContiouns("http://api.nbp.pl/api/exchangerates/rates/c/usd/today/?format=json");
+
+        static GetApiContiouns getApiContiouns = new GetApiContiouns("http://api.nbp.pl/api/exchangerates/rates/c/usd/?today/?format=json");
+        GetApi getApi = new GetApi();
 
         [HttpGet]
 
-        public string GetDolars()
+        public async Task<string> GetDolars()
         {
-            return ReadTable.GetCurrent("Data/DolarsTable", "http://api.nbp.pl/api/exchangerates/rates/c/usd/today/?format=json");
+            return await getApi.GetApiAsync("Data/DolarsTable", "http://api.nbp.pl/api/exchangerates/rates/c/usd/?today/?format=json");
         }
+
+
+
 
         [HttpGet("now")]
         public async Task<string> GetDolarsContinousAsync()
         {
-           
-            return await getApiContiouns.AsyncGetApiContinous();
+            
+            return await getApiContiouns.GetApiContinousAsync();
         }
+
+
+
     }
 }
+
