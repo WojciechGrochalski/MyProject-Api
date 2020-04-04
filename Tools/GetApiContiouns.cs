@@ -1,5 +1,5 @@
 ﻿using MyProject.Currency;
-
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -41,7 +41,7 @@ namespace MyProject.Tools
             string bidPrice = jObject.rates[0].bid;
 
             myWaluteAsync.Add(code, bidPrice, askPrice, acctualPriceData);
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(myWaluteAsync);
+            string jsonString = JsonConvert.SerializeObject(myWaluteAsync,Formatting.Indented);
             await Task.CompletedTask;
 
             return DolarInfoNow = jsonString;
@@ -61,7 +61,7 @@ namespace MyProject.Tools
             string bidPrice = jObject.rates[0].bid;
 
             myWaluteAsync.Add(code, bidPrice, askPrice, acctualPriceData);
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(myWaluteAsync);
+            string jsonString = JsonConvert.SerializeObject(myWaluteAsync, Formatting.Indented);
             await Task.CompletedTask;
 
             return DolarInfoNow = jsonString;

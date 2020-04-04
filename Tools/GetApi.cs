@@ -62,7 +62,7 @@ namespace MyProject.Tools
                 } 
             }
               
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(myListOfWalutes);
+            string jsonString = JsonConvert.SerializeObject(myListOfWalutes, Formatting.Indented);
             File.WriteAllText(path, jsonString);
             await Task.CompletedTask;
             return jsonString;

@@ -1,1 +1,62 @@
-[{"Type":"USD","BidPrice":"4.1728","AskPrice":"4.257","AcctualPriceData":"04.04 13:04:32"},{"Type":"USD","BidPrice":"4.1541","AskPrice":"4.2381","AcctualPriceData":"04.02 17:24:23"},{"Type":"USD","BidPrice":"4.1541","AskPrice":"4.2381","AcctualPriceData":"04.02 14:39:14"},{"Type":"USD","BidPrice":"4.1541","AskPrice":"4.2381","AcctualPriceData":"04.02 14:36:01"},{"Type":"USD","BidPrice":"4.1541","AskPrice":"4.2381","AcctualPriceData":"04.02 14:31:43"},{"Type":"USD","BidPrice":"4.1541","AskPrice":"4.2381","AcctualPriceData":"04.02 14:26:24"},{"Type":"USD","BidPrice":"4.1541","AskPrice":"4.2381","AcctualPriceData":"04.02 14:22:09"},{"Type":"USD","BidPrice":"4.1541","AskPrice":"4.2381","AcctualPriceData":"04.02 14:21:29"},{"Type":"USD","BidPrice":"4.1541","AskPrice":"4.2381","AcctualPriceData":"04.02 13:58:25"},{"Type":"USD","BidPrice":"4.1541","AskPrice":"4.2381","AcctualPriceData":"04.02 13:55:10"}]
+[
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.04 21:25:04"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.04 21:22:55"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.04 21:22:54"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.04 21:22:53"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.04 21:22:52"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.04 21:22:52"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.04 21:22:51"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.04 21:22:38"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.04 13:04:32"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1541",
+    "AskPrice": "4.2381",
+    "AcctualPriceData": "04.02 17:24:23"
+  }
+]

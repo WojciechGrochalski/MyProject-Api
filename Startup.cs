@@ -47,7 +47,7 @@ namespace MyProject
                 endpoints.MapControllers();
             });
 
-
+           
             app.UseWebSockets();
 
             app.Use(async (http, next) =>
