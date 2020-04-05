@@ -47,7 +47,7 @@ namespace MyProject.Tools
             if (fileData != "")
             {
                 int counter = 0;
-                helpListOfWalutes= JsonConvert.DeserializeObject<List<ValueOfCurrency>>(fileData);
+                helpListOfWalutes = JsonConvert.DeserializeObject<List<ValueOfCurrency>>(fileData);
                 
                 foreach (ValueOfCurrency item in helpListOfWalutes)
                 {

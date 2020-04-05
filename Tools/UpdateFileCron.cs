@@ -14,18 +14,17 @@ using System.Threading.Tasks;
 
 namespace MyProject.Tools
 {
-    public class MyCronJob : CronJobService
+    public class UpdateFileCron : CronJobService
     {
-        private readonly ILogger<MyCronJob> _logger;
-        readonly WebClient webClient = new WebClient();
-        readonly CultureInfo kultura1 = new CultureInfo("Pl-pl");
+        private readonly ILogger<UpdateFileCron> _logger;
         public ValueOfCurrency myWalute = new ValueOfCurrency();
         public List<ValueOfCurrency> _listOfValue = new List<ValueOfCurrency>();
         GetApiContiouns getApiContiouns = new GetApiContiouns();
-        public string[] isoArray;
-        
+        public List<ValueOfCurrency> _helpListOfValue = new List<ValueOfCurrency>();
 
-        public MyCronJob(IScheduleConfig<MyCronJob> config, ILogger<MyCronJob> logger)
+
+
+        public UpdateFileCron(IScheduleConfig<UpdateFileCron> config, ILogger<UpdateFileCron> logger)
             : base(config.CronExpression, config.TimeZoneInfo)
         {
             _logger = logger;
@@ -40,20 +39,36 @@ namespace MyProject.Tools
         public override Task DoWork(CancellationToken cancellationToken)
         {
             _listOfValue.Clear();
-         
-            string path = @"Data/iso.json";
+            _helpListOfValue.Clear();
+
+            string path = @"Data/ValueOfCurrencyToday.json";
             path = Path.GetFullPath(path);
+
             string fileData = File.ReadAllText(path);
-            isoArray = JsonConvert.DeserializeObject<string[]>(fileData);
-            foreach (string iso in isoArray)
+
+            _listOfValue = JsonConvert.DeserializeObject<List<ValueOfCurrency>>(fileData);
+
+            path = @"Data/ValueOfCurrency.json";
+            path = Path.GetFullPath(path);
+            fileData = File.ReadAllText(path);
+            if (fileData != "")
             {
-                string url = "http://api.nbp.pl/api/exchangerates/rates/c/" + iso + "/?today/?format=json";
-                _listOfValue.Add( getApiContiouns.GetApiToFile(url));
+                _helpListOfValue = JsonConvert.DeserializeObject<List<ValueOfCurrency>>(fileData);
+
+                foreach (ValueOfCurrency item in _helpListOfValue)
+                {
+                    _listOfValue.Add(item);
+
+                    if (DateTime.Compare(DateTime.Parse(item.AcctualPriceData), DateTime.Now.AddDays(-100))==-1)
+                    {
+                        break;
+                    }
+
+                }
             }
 
-            string jsonString = JsonConvert.SerializeObject(_listOfValue,Formatting.Indented);
-            path = @"Data/ValueOfCurrencyToday.json";
-            path = Path.GetFullPath(path);
+            string jsonString = JsonConvert.SerializeObject(_listOfValue, Formatting.Indented);
+
             File.WriteAllText(path, jsonString);
             return Task.CompletedTask;
         }
@@ -65,3 +80,4 @@ namespace MyProject.Tools
         }
     }
 }
+

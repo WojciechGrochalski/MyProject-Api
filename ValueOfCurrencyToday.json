@@ -1,6 +1,0 @@
-[
-  "{\r\n  \"Type\": \"USD\",\r\n  \"BidPrice\": \"4.1728\",\r\n  \"AskPrice\": \"4.257\",\r\n  \"AcctualPriceData\": \"04.05 12:18:00\"\r\n}",
-  "{\r\n  \"Type\": \"EUR\",\r\n  \"BidPrice\": \"4.5283\",\r\n  \"AskPrice\": \"4.6197\",\r\n  \"AcctualPriceData\": \"04.05 12:18:00\"\r\n}",
-  "{\r\n  \"Type\": \"GBP\",\r\n  \"BidPrice\": \"5.161\",\r\n  \"AskPrice\": \"5.2652\",\r\n  \"AcctualPriceData\": \"04.05 12:18:00\"\r\n}",
-  "{\r\n  \"Type\": \"SEK\",\r\n  \"BidPrice\": \"0.4115\",\r\n  \"AskPrice\": \"0.4199\",\r\n  \"AcctualPriceData\": \"04.05 12:18:00\"\r\n}"
-]

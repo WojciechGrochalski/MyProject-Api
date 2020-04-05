@@ -22,5 +22,29 @@
     "BidPrice": "0.4115",
     "AskPrice": "0.4199",
     "AcctualPriceData": "04.05"
+  },
+  {
+    "Type": "USD",
+    "BidPrice": "4.1728",
+    "AskPrice": "4.257",
+    "AcctualPriceData": "04.05 "
+  },
+  {
+    "Type": "EUR",
+    "BidPrice": "4.5283",
+    "AskPrice": "4.6197",
+    "AcctualPriceData": "04.05 "
+  },
+  {
+    "Type": "GBP",
+    "BidPrice": "5.161",
+    "AskPrice": "5.2652",
+    "AcctualPriceData": "04.05"
+  },
+  {
+    "Type": "SEK",
+    "BidPrice": "0.4115",
+    "AskPrice": "0.4199",
+    "AcctualPriceData": "04.05 "
   }
 ]
