@@ -18,16 +18,9 @@ namespace MyProject.Tools
         public ValueOfCurrency myWaluteAsync = new ValueOfCurrency();
         Timer myTimer = new Timer();
         public string Data { get; set; }
-        public string NBP_Address { get; set; }
+ 
 
-        public static string DolarInfoNow;
-
-        public GetApiContiouns(string data)
-        {
-            Data = data;
-        }
-
-        public async Task<string> GetApiContinousAsync()
+        public string GetApiContinous(string data)
         {
             string reply = webClient.DownloadString(Data);
             if(reply== "404 Not Found"||reply== "400 Bad Request")
@@ -35,19 +28,33 @@ namespace MyProject.Tools
                 return reply;
             }
             dynamic jObject = JObject.Parse(reply);
-            string acctualPriceData = DateTime.Now.ToString("MM.dd HH:mm:ss");
+            string acctualPriceData = DateTime.Now.ToString("MM.dd ");
             string code = jObject.code;
             string askPrice = jObject.rates[0].ask;
             string bidPrice = jObject.rates[0].bid;
 
             myWaluteAsync.Add(code, bidPrice, askPrice, acctualPriceData);
             string jsonString = JsonConvert.SerializeObject(myWaluteAsync,Formatting.Indented);
-            await Task.CompletedTask;
-
-            return DolarInfoNow = jsonString;
+         
+            return  jsonString;
         }
 
-        public async Task<string> GetApiContinousAsync(string iso)
+        public ValueOfCurrency GetApiToFile(string data)
+        {
+            string reply = webClient.DownloadString(Data);
+           
+            dynamic jObject = JObject.Parse(reply);
+            string acctualPriceData = DateTime.Now.ToString("MM.dd ");
+            string code = jObject.code;
+            string askPrice = jObject.rates[0].ask;
+            string bidPrice = jObject.rates[0].bid;
+
+            myWaluteAsync.Add(code, bidPrice, askPrice, acctualPriceData);
+
+            return myWaluteAsync;
+        }
+
+        public async Task<string> GetApiContinousAsync()
         {
             string reply = webClient.DownloadString(Data);
             if (reply == "404 Not Found" || reply == "400 Bad Request")
@@ -55,7 +62,7 @@ namespace MyProject.Tools
                 return reply;
             }
             dynamic jObject = JObject.Parse(reply);
-            string acctualPriceData = DateTime.Now.ToString("MM.dd HH:mm:ss");
+            string acctualPriceData = DateTime.Now.ToString("MM.dd ");
             string code = jObject.code;
             string askPrice = jObject.rates[0].ask;
             string bidPrice = jObject.rates[0].bid;
@@ -64,7 +71,7 @@ namespace MyProject.Tools
             string jsonString = JsonConvert.SerializeObject(myWaluteAsync, Formatting.Indented);
             await Task.CompletedTask;
 
-            return DolarInfoNow = jsonString;
+            return  jsonString;
         }
     }
 

@@ -9,16 +9,15 @@ using MyProject.Tools;
 
 namespace MyProject.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class CurrentsEuro : ControllerBase
+    public class Euro : ControllerBase
     {
-        GetApi getApi = new GetApi();
 
         [HttpGet]
         public async Task<string> GetEuro()
         {
-            return  await getApi.GetApiAsync("Data/EuroTable", "http://api.nbp.pl/api/exchangerates/rates/c/eur/?today/?format=json");
+            return await ReadValue.GetCurrent("eur");
         }
 
      

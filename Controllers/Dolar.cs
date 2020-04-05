@@ -13,31 +13,22 @@ using MyProject.Tools;
 namespace MyProject.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class CurrentsUsd : ControllerBase
+    [Route("api/[controller]")]
+    public class Dolar : ControllerBase
     {
-
-        static GetApiContiouns getApiContiouns = new GetApiContiouns("http://api.nbp.pl/api/exchangerates/rates/c/usd/?today/?format=json");
-        GetApi getApi = new GetApi();
 
         [HttpGet]
 
         public async Task<string> GetDolars()
         {
-            return await getApi.GetApiAsync("Data/DolarsTable", "http://api.nbp.pl/api/exchangerates/rates/c/usd/?today/?format=json");
+            return await ReadValue.GetCurrent("usd");
         }
-
-
-
 
         [HttpGet("now")]
         public async Task<string> GetDolarsContinousAsync()
         {
-            
-            return await getApiContiouns.GetApiContinousAsync();
+            return await ReadValue.GetCurrent( "usd");
         }
-
-
 
     }
 }

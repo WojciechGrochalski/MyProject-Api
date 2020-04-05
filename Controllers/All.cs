@@ -8,23 +8,15 @@ using MyProject.Tools;
 
 namespace MyProject.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class AllCurrents : ControllerBase
+    public class All : ControllerBase
     {
-
 
         [HttpGet("{iso}")]
         public async Task<string> GetWaluteContinousAsync(string iso)
         {
-            string url = "http://api.nbp.pl/api/exchangerates/rates/c/" + iso + "/?today/?format=json";
-            GetApiContiouns getApiContiouns = new GetApiContiouns(url);
-
-
-            return await getApiContiouns.GetApiContinousAsync();
+            return await ReadValue.GetCurrent(iso);
         }
-
-
-
     }
 }

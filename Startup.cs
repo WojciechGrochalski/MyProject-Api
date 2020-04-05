@@ -1,3 +1,4 @@
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -6,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MyProject.Services;
+using MyProject.Tools;
 using Newtonsoft.Json;
 
 namespace MyProject
@@ -23,9 +26,13 @@ namespace MyProject
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers()
-                .AddJsonOptions(x => x.JsonSerializerOptions.WriteIndented = true); 
-            
-           
+                .AddJsonOptions(x => x.JsonSerializerOptions.WriteIndented = true);
+
+            services.AddCronJob<MyCronJob>(c =>
+            {
+                c.TimeZoneInfo = TimeZoneInfo.Local;
+                c.CronExpression = @" 20 8 * * *  ";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "CurrentsUsd",
+      "launchUrl": "api/Dolar",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "MyProject": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "CurrentsEur",
+      "launchUrl": "api/Dolar",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

@@ -31,7 +31,7 @@ namespace MyProject.Tools
                 return reply;
             }
             dynamic jObject  = JObject.Parse(reply);
-            string acctualPriceData = DateTime.Now.ToString("MM.dd HH:mm:ss");
+            string acctualPriceData = DateTime.Now.ToString("MM.dd ");
             string code = jObject.code;
             string askPrice = jObject.rates[0].ask;
             string bidPrice = jObject.rates[0].bid;
