@@ -8,7 +8,8 @@ namespace MyProject.Repository
 {
    public  interface ICurrencyRepository
     {
-        Task<string> GetCurrent(string iso);
+        Task<string> GetCurrent(string iso,string date);
+        Task<string> GetCurrentToday(string iso);
         ValueOfCurrency GetApiToFile(string url);
         void GetApi();
     }

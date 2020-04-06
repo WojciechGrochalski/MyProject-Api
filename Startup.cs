@@ -34,8 +34,8 @@ namespace MyProject
             services.AddCronJob<UpdateFileCron>(c =>
             {
                 c.TimeZoneInfo = TimeZoneInfo.Local;
-               // c.CronExpression = @" 30 8 * * 1-5";
-                c.CronExpression = @"* * * * *";
+                c.CronExpression = @" 30 8 * * 1-5";
+               // c.CronExpression = @"* * * * *";
             });
             services.AddCronJob<MyCronJob>(c =>
             {

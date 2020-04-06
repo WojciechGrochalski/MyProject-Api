@@ -1,5 +1,1454 @@
 [
   {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar amerykański",
+    "Code": "USD",
+    "BidPrice": "4.193",
+    "AskPrice": "4.2778",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "euro",
+    "Code": "EUR",
+    "BidPrice": "4.5239",
+    "AskPrice": "4.6153",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "funt szterling",
+    "Code": "GBP",
+    "BidPrice": "5.1417",
+    "AskPrice": "5.2455",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar australijski",
+    "Code": "AUD",
+    "BidPrice": "2.5194",
+    "AskPrice": "2.5702",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "dolar kanadyjski",
+    "Code": "CAD",
+    "BidPrice": "2.9673",
+    "AskPrice": "3.0273",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "forint (Węgry)",
+    "Code": "HUF",
+    "BidPrice": "0.012369",
+    "AskPrice": "0.012619",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "frank szwajcarski",
+    "Code": "CHF",
+    "BidPrice": "4.2846",
+    "AskPrice": "4.3712",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "jen (Japonia)",
+    "Code": "JPY",
+    "BidPrice": "0.038653",
+    "AskPrice": "0.039433",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona czeska",
+    "Code": "CZK",
+    "BidPrice": "0.1632",
+    "AskPrice": "0.1664",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona duńska",
+    "Code": "DKK",
+    "BidPrice": "0.6056",
+    "AskPrice": "0.6178",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona norweska",
+    "Code": "NOK",
+    "BidPrice": "0.4001",
+    "AskPrice": "0.4081",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "SDR (MFW)",
+    "Code": "XDR",
+    "BidPrice": "5.6648",
+    "AskPrice": "5.7792",
+    "Data": "06.04.2020"
+  },
+  {
+    "Name": "korona szwedzka",
+    "Code": "SEK",
+    "BidPrice": "0.4122",
+    "AskPrice": "0.4206",
+    "Data": "06.04.2020"
+  },
+  {
     "Name": "dolar amerykański",
     "Code": "USD",
     "BidPrice": "4.193",

@@ -27,13 +27,13 @@ namespace MyProject.Controllers
         [HttpGet]
         public async Task<string> GetDolars()
         {
-            return await _currencyRepository.GetCurrent("USD");
+            return await _currencyRepository.GetCurrentToday("USD");
         }
 
         [HttpGet("now")]
         public async Task<string> GetDolarsContinousAsync()
         {
-            return await _currencyRepository.GetCurrent( "usd");
+            return await _currencyRepository.GetCurrentToday( "usd");
         }
 
     }

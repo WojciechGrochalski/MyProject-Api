@@ -20,9 +20,15 @@ namespace MyProject.Controllers
             _currencyRepository = currencyRepository;
         }
         [HttpGet("{iso}")]
-        public async Task<string> GetWaluteContinousAsync(string iso)
+        public async Task<string> GetWaluteToday(string iso)
         {
-            return await _currencyRepository.GetCurrent(iso);
+            return await _currencyRepository.GetCurrentToday(iso);
+        }
+
+        [HttpGet("{iso}/{date}")]
+        public async Task<string> GetWalute(string iso,string date)
+        {
+            return await _currencyRepository.GetCurrent(iso,date);
         }
     }
 }

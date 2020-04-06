@@ -23,7 +23,7 @@ namespace MyProject.Controllers
         [HttpGet]
         public async Task<string> GetEuro()
         {
-            return await _currencyRepository.GetCurrent("eur");
+            return await _currencyRepository.GetCurrentToday("eur");
         }
 
      
