@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using MyProject.Currency;
-
+using MyProject.Repository;
 using Newtonsoft.Json;
 using Services.CronoJobServices;
 using System;
@@ -17,12 +17,8 @@ namespace MyProject.Tools
     public class UpdateFileCron : CronJobService
     {
         private readonly ILogger<UpdateFileCron> _logger;
-       // public ValueOfCurrency myWalute = new ValueOfCurrency();
         public List<CurrencyDTO> _listOfValue = new List<CurrencyDTO>();
-        GetApiContiouns getApiContiouns = new GetApiContiouns();
         public List<CurrencyDTO> _helpListOfValue = new List<CurrencyDTO>();
-
-
 
         public UpdateFileCron(IScheduleConfig<UpdateFileCron> config, ILogger<UpdateFileCron> logger)
             : base(config.CronExpression, config.TimeZoneInfo)
@@ -63,7 +59,6 @@ namespace MyProject.Tools
                     {
                         break;
                     }
-
                 }
             }
 

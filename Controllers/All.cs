@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MyProject.Repository;
 using MyProject.Tools;
 
 namespace MyProject.Controllers
@@ -13,10 +14,15 @@ namespace MyProject.Controllers
     public class All : ControllerBase
     {
 
+        private ICurrencyRepository _currencyRepository;
+        public All(ICurrencyRepository currencyRepository)
+        {
+            _currencyRepository = currencyRepository;
+        }
         [HttpGet("{iso}")]
         public async Task<string> GetWaluteContinousAsync(string iso)
         {
-            return await ReadValue.GetCurrent(iso);
+            return await _currencyRepository.GetCurrent(iso);
         }
     }
 }

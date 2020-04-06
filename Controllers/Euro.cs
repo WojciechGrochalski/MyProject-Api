@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
+using MyProject.Repository;
 using MyProject.Tools;
 
 namespace MyProject.Controllers
@@ -13,11 +13,17 @@ namespace MyProject.Controllers
     [ApiController]
     public class Euro : ControllerBase
     {
+        private ICurrencyRepository _currencyRepository;
+
+        public Euro(ICurrencyRepository currencyRepository)
+        {
+            _currencyRepository = currencyRepository;
+        }
 
         [HttpGet]
         public async Task<string> GetEuro()
         {
-            return await ReadValue.GetCurrent("eur");
+            return await _currencyRepository.GetCurrent("eur");
         }
 
      

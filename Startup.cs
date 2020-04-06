@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyProject.AutoMapper;
+using MyProject.Repository;
 using MyProject.Tools;
 using Newtonsoft.Json;
 using Services.CronoJobServices;
@@ -29,17 +30,18 @@ namespace MyProject
             services.AddControllers()
                 .AddJsonOptions(x => x.JsonSerializerOptions.WriteIndented = true);
             services.AddSingleton(AutoMapperConfig.Initialize());
+             services.AddScoped<ICurrencyRepository, ApiTools>();
             services.AddCronJob<UpdateFileCron>(c =>
             {
                 c.TimeZoneInfo = TimeZoneInfo.Local;
-                c.CronExpression = @" 30 8 * * 1-5";
-               // c.CronExpression = @"* * * * *";
+               // c.CronExpression = @" 30 8 * * 1-5";
+                c.CronExpression = @"* * * * *";
             });
             services.AddCronJob<MyCronJob>(c =>
             {
                 c.TimeZoneInfo = TimeZoneInfo.Local;
-                //c.CronExpression = @"* * * * *";
-                c.CronExpression = @" 25 8 * * 1-5";
+                c.CronExpression = @"* * * * *";
+               // c.CronExpression = @" 25 8 * * 1-5";
             });
            
         }

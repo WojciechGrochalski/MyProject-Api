@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using MyProject.Currency;
-
+using MyProject.Repository;
 using Newtonsoft.Json;
 using Services.CronoJobServices;
 using System;
@@ -17,12 +17,7 @@ namespace MyProject.Tools
     public class MyCronJob : CronJobService
     {
         private readonly ILogger<MyCronJob> _logger;
-        readonly WebClient webClient = new WebClient();
-        public List<ValueOfCurrency> _listOfValue = new List<ValueOfCurrency>();
-        GetApiContiouns getApiContiouns = new GetApiContiouns();
-        public string[] isoArray;
-        
-
+        ApiTools apiServices = new ApiTools();
         public MyCronJob(IScheduleConfig<MyCronJob> config, ILogger<MyCronJob> logger)
             : base(config.CronExpression, config.TimeZoneInfo)
         {
@@ -37,22 +32,7 @@ namespace MyProject.Tools
 
         public override Task DoWork(CancellationToken cancellationToken)
         {
-            _listOfValue.Clear();
-         
-            string path = @"Data/iso.json";
-            path = Path.GetFullPath(path);
-            string fileData = File.ReadAllText(path);
-            isoArray = JsonConvert.DeserializeObject<string[]>(fileData);
-            foreach (string iso in isoArray)
-            {
-                string url = "http://api.nbp.pl/api/exchangerates/rates/c/" + iso + "/?today/?format=json";
-                _listOfValue.Add( getApiContiouns.GetApiToFile(url));
-            }
-
-            string jsonString = JsonConvert.SerializeObject(_listOfValue,Formatting.Indented);
-            path = @"Data/ValueOfCurrencyToday.json";
-            path = Path.GetFullPath(path);
-            File.WriteAllText(path, jsonString);
+            apiServices.GetApi();
             return Task.CompletedTask;
         }
 

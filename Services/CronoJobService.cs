@@ -1,6 +1,8 @@
 ﻿using Cronos;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MyProject.Currency;
+using MyProject.Repository;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -69,6 +71,8 @@ namespace Services.CronoJobServices
         {
             _timer?.Dispose();
         }
+
+      
     }
 
     public interface IScheduleConfig<T>
@@ -85,7 +89,7 @@ namespace Services.CronoJobServices
 
     public static class ScheduledServiceExtensions
     {
-        public static IServiceCollection AddCronJob<T>(this IServiceCollection services, Action<IScheduleConfig<T>> options) where T : CronJobService
+        public static IServiceCollection AddCronJob<T>(this IServiceCollection services, Action<IScheduleConfig<T>> options ) where T : CronJobService
         {
             if (options == null)
             {
