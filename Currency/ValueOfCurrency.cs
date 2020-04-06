@@ -7,32 +7,71 @@ namespace MyProject.Currency
 {
     public class ValueOfCurrency
     {
-        public string Type { get;  set; }
-        public string BidPrice { get; set; }
-        public string AskPrice { get; set; }
-        public string AcctualPriceData { get;  set; }
-
+        public string Name { get; protected set; }
+        public string Code { get; protected set; }
+        public string BidPrice { get; protected set; }
+        public string AskPrice { get; protected set; }
+        public string Data { get; set; }
+        List<ValueOfCurrency> _listOfObject = new List<ValueOfCurrency>();
         public ValueOfCurrency()
         {
 
         }
-        public ValueOfCurrency(string type,string bidPrice,string askPrice,string acctualPriceData)
+        public ValueOfCurrency(string name ,string code,string bidPrice,string askPrice,string data)
         {
-            Type = type;
-            BidPrice = bidPrice;
-            AskPrice = askPrice;
-            AcctualPriceData = acctualPriceData;
+            SetName(name);
+            SetCode (code);
+            SetBidPrice (bidPrice);
+            SetAskPrice (askPrice);
+            SetData (data);
         }
 
-        public void Add(string type, string bidPrice, string askPrice, string acctualPriceData)
+        public void SetValueList(List<ValueOfCurrency> listwalute)
         {
-            Type = type;
-            BidPrice = bidPrice;
-            AskPrice = askPrice;
-            AcctualPriceData = acctualPriceData;
-
+            _listOfObject.AddRange(listwalute);
         }
 
-      
+        public void SetValue(ValueOfCurrency walute)
+        {
+            SetName(walute.Name);
+            SetCode(walute.Code);
+            SetBidPrice(walute.BidPrice);
+            SetAskPrice(walute.AskPrice);
+            SetData(walute.Data);
+        }
+
+
+        public bool FindIso(string iso)
+        {
+            if(iso==Code)
+            {
+                return true;
+            }
+            return false;
+        }
+        public void SetName(string name)
+        {
+            Name = name;
+        }
+        public void SetCode(string code)
+        {
+            Code = code;
+        }
+        public void SetBidPrice(string bidPrice)
+        {
+            BidPrice = bidPrice;
+        }
+        public void SetAskPrice(string askPrice)
+        {
+            AskPrice = askPrice;
+        }
+        public void SetData(string data)
+        {
+            Data = data;
+        }
+
+
+
+
     }
 }

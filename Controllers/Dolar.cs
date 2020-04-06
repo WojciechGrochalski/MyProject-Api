@@ -21,7 +21,7 @@ namespace MyProject.Controllers
 
         public async Task<string> GetDolars()
         {
-            return await ReadValue.GetCurrent("usd");
+            return await ReadValue.GetCurrent("USD");
         }
 
         [HttpGet("now")]

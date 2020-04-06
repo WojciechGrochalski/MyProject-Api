@@ -2,5 +2,14 @@
   "usd",
   "eur",
   "gbp",
+  "aud",
+  "cad",
+  "huf",
+  "chf",
+  "jpy",
+  "czk",
+  "dkk",
+  "nok",
+  "xdr",
   "sek"
 ]

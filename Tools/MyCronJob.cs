@@ -18,8 +18,6 @@ namespace MyProject.Tools
     {
         private readonly ILogger<MyCronJob> _logger;
         readonly WebClient webClient = new WebClient();
-        readonly CultureInfo kultura1 = new CultureInfo("Pl-pl");
-        public ValueOfCurrency myWalute = new ValueOfCurrency();
         public List<ValueOfCurrency> _listOfValue = new List<ValueOfCurrency>();
         GetApiContiouns getApiContiouns = new GetApiContiouns();
         public string[] isoArray;

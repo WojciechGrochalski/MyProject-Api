@@ -15,7 +15,7 @@ namespace MyProject.Tools
     {
         readonly WebClient webClient = new WebClient();
         readonly CultureInfo kultura1 = new CultureInfo("Pl-pl");
-        public ValueOfCurrency myWaluteAsync = new ValueOfCurrency();
+        public ValueOfCurrency _walute = new ValueOfCurrency();
         Timer myTimer = new Timer();
         public string Data { get; set; }
  
@@ -28,30 +28,31 @@ namespace MyProject.Tools
                 return reply;
             }
             dynamic jObject = JObject.Parse(reply);
-            string acctualPriceData = DateTime.Now.ToString("MM.dd ");
+            string acctualPriceData = DateTime.Now.ToString("yyy.MM.dd ");
             string code = jObject.code;
             string askPrice = jObject.rates[0].ask;
             string bidPrice = jObject.rates[0].bid;
 
-            myWaluteAsync.Add(code, bidPrice, askPrice, acctualPriceData);
-            string jsonString = JsonConvert.SerializeObject(myWaluteAsync,Formatting.Indented);
+          //  _walute.Add(code, bidPrice, askPrice, acctualPriceData);
+            string jsonString = JsonConvert.SerializeObject(_walute,Formatting.Indented);
          
             return  jsonString;
         }
 
         public ValueOfCurrency GetApiToFile(string data)
         {
-            string reply = webClient.DownloadString(Data);
+            string reply = webClient.DownloadString(data);
            
             dynamic jObject = JObject.Parse(reply);
-            string acctualPriceData = DateTime.Now.ToString("MM.dd ");
+            string date = DateTime.Now.ToString("dd.MM.yyyy");
+            string name = jObject.currency;
             string code = jObject.code;
             string askPrice = jObject.rates[0].ask;
             string bidPrice = jObject.rates[0].bid;
 
-            myWaluteAsync.Add(code, bidPrice, askPrice, acctualPriceData);
+            ValueOfCurrency _walute = new ValueOfCurrency(name,code,bidPrice,askPrice,date);
 
-            return myWaluteAsync;
+            return _walute;
         }
 
         public async Task<string> GetApiContinousAsync()
@@ -62,13 +63,13 @@ namespace MyProject.Tools
                 return reply;
             }
             dynamic jObject = JObject.Parse(reply);
-            string acctualPriceData = DateTime.Now.ToString("MM.dd ");
+            string acctualPriceData = DateTime.Now.ToString("yyyy.MM.dd ");
             string code = jObject.code;
             string askPrice = jObject.rates[0].ask;
             string bidPrice = jObject.rates[0].bid;
 
-            myWaluteAsync.Add(code, bidPrice, askPrice, acctualPriceData);
-            string jsonString = JsonConvert.SerializeObject(myWaluteAsync, Formatting.Indented);
+           // _walute.Add(code, bidPrice, askPrice, acctualPriceData);
+            string jsonString = JsonConvert.SerializeObject(_walute, Formatting.Indented);
             await Task.CompletedTask;
 
             return  jsonString;

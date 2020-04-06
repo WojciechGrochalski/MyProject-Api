@@ -31,13 +31,13 @@ namespace MyProject.Tools
                 return reply;
             }
             dynamic jObject  = JObject.Parse(reply);
-            string acctualPriceData = DateTime.Now.ToString("MM.dd ");
+            string acctualPriceData = DateTime.Now.ToString("yyyy.MM.dd ");
             string code = jObject.code;
             string askPrice = jObject.rates[0].ask;
             string bidPrice = jObject.rates[0].bid;
 
       
-            myWalute.Add(code, bidPrice, askPrice, acctualPriceData);
+           // myWalute.Add(code, bidPrice, askPrice, acctualPriceData);
             myListOfWalutes.Add(myWalute);
 
             string path = @"" + data +".json";

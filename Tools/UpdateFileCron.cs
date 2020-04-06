@@ -17,10 +17,10 @@ namespace MyProject.Tools
     public class UpdateFileCron : CronJobService
     {
         private readonly ILogger<UpdateFileCron> _logger;
-        public ValueOfCurrency myWalute = new ValueOfCurrency();
-        public List<ValueOfCurrency> _listOfValue = new List<ValueOfCurrency>();
+       // public ValueOfCurrency myWalute = new ValueOfCurrency();
+        public List<CurrencyDTO> _listOfValue = new List<CurrencyDTO>();
         GetApiContiouns getApiContiouns = new GetApiContiouns();
-        public List<ValueOfCurrency> _helpListOfValue = new List<ValueOfCurrency>();
+        public List<CurrencyDTO> _helpListOfValue = new List<CurrencyDTO>();
 
 
 
@@ -46,20 +46,20 @@ namespace MyProject.Tools
 
             string fileData = File.ReadAllText(path);
 
-            _listOfValue = JsonConvert.DeserializeObject<List<ValueOfCurrency>>(fileData);
+            _listOfValue = JsonConvert.DeserializeObject<List<CurrencyDTO>>(fileData);
 
             path = @"Data/ValueOfCurrency.json";
             path = Path.GetFullPath(path);
             fileData = File.ReadAllText(path);
             if (fileData != "")
             {
-                _helpListOfValue = JsonConvert.DeserializeObject<List<ValueOfCurrency>>(fileData);
+                _helpListOfValue = JsonConvert.DeserializeObject<List<CurrencyDTO>>(fileData);
 
-                foreach (ValueOfCurrency item in _helpListOfValue)
+                foreach (CurrencyDTO item in _helpListOfValue)
                 {
                     _listOfValue.Add(item);
 
-                    if (DateTime.Compare(DateTime.Parse(item.AcctualPriceData), DateTime.Now.AddDays(-100))==-1)
+                    if (DateTime.Compare(DateTime.Now.AddDays(-100), DateTime.Parse(item.Data)) == 1)
                     {
                         break;
                     }
