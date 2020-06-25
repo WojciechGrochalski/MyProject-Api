@@ -40,8 +40,8 @@ namespace MyProject
             services.AddCronJob<MyCronJob>(c =>
             {
                 c.TimeZoneInfo = TimeZoneInfo.Local;
-                c.CronExpression = @"* * * * *";
-               // c.CronExpression = @" 25 8 * * 1-5";
+               // c.CronExpression = @"* * * * *";
+                c.CronExpression = @" 25 8 * * 1-5";
             });
            
         }

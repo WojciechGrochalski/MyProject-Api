@@ -29,7 +29,8 @@ namespace MyProject.Tools
             {
                 return "400 Bad Request";
             }
-           string path = "Data/ValueOfCurrencyToday.json";
+            iso = iso.ToUpper();
+            string path = "Data/ValueOfCurrencyToday.json";
                 path = Path.GetFullPath(path);
             string fileData = File.ReadAllText(path);
                 listOfObject = JsonConvert.DeserializeObject<List<CurrencyDTO>>(fileData);
@@ -53,10 +54,7 @@ namespace MyProject.Tools
             {
                 return "400 Bad Request";
             }
-            if(date!= "dd.MM.yyyy")
-            {
-                return "400 Bad Request";
-            }
+            iso = iso.ToUpper();
             string path = "Data/ValueOfCurrency.json";
             path = Path.GetFullPath(path);
             string fileData = File.ReadAllText(path);
@@ -94,7 +92,7 @@ namespace MyProject.Tools
         {
             _listOfValue.Clear();
 
-            string path = @"Data/iso.json";
+            string path = @"Data/Iso.json";
             path = Path.GetFullPath(path);
             string fileData = File.ReadAllText(path);
             isoArray = JsonConvert.DeserializeObject<string[]>(fileData);
@@ -114,7 +112,7 @@ namespace MyProject.Tools
         {
             bool breaker = false;
             iso = iso.ToUpper();
-            string path = @"Data/iso.json";
+            string path = @"Data/Iso.json";
             path = Path.GetFullPath(path);
             string fileData = File.ReadAllText(path);
             isoArray = JsonConvert.DeserializeObject<string[]>(fileData);

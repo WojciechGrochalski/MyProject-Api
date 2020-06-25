@@ -55,10 +55,10 @@ namespace MyProject.Tools
                 {
                     _listOfValue.Add(item);
 
-                    if (DateTime.Compare(DateTime.Now.AddDays(-100), DateTime.Parse(item.Data)) == 1)
-                    {
-                        break;
-                    }
+                    //if (DateTime.Compare(DateTime.Now.AddDays(-100), DateTime.Parse(item.Data)) == 1)
+                    //{
+                    //    break;
+                    //}
                 }
             }
 
